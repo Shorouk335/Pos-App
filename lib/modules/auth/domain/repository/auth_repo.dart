@@ -9,7 +9,7 @@ import 'package:e_ticket_app/modules/auth/domain/request/login_request_model.dar
 // login 
 class AuthRepo with AuthEndPoint {
 
-  Future<Either<Failure, UserModel>> login({ required LoginRequestModel loginData}) async {
+ ` Future<Either<Failure, UserModel>> login({ required LoginRequestModel loginData}) async {
     try {
       final Response response = await Utils.dio()
           .post(url: AuthEndPoint.login, body: loginData.toJson());
@@ -28,5 +28,5 @@ class AuthRepo with AuthEndPoint {
     } on Exception {
       return left(Failure.defaultMessage());
     }
-  }
+  }`
 }

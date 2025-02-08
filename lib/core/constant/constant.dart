@@ -1,4 +1,4 @@
-const String kBaseUrl = "https://demo.infosas.eg/api/v1/";
+const String kBaseUrl = "https://www.google.com/";
 const String kUserModel = "userModel";
 const String kDiscountBox = "discount";
 const String kFavoriteBox = "favorite";

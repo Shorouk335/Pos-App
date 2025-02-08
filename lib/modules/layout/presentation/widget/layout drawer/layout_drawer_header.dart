@@ -32,19 +32,19 @@ class _LayoutDrawerHeaderWidgetState extends State<LayoutDrawerHeaderWidget> {
             children: [
               CustomText(
                 context: context,
-                text:  userModel.username ?? "",
+                text:  userModel.username ?? "Name",
                 type: TextType.textButton,
                 isWeight: true,
                
               ),
               CustomText(
                 context: context,
-                text: userModel.name ?? "",
+                text: userModel.name ?? "Name2",
                 type: TextType.textButton,
               ),
               CustomText(
                 context: context,
-                text: userModel.role ?? "",
+                text: userModel.role ?? "Role",
                 type: TextType.textButton,
               ),
             ],

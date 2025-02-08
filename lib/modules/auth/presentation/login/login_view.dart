@@ -20,7 +20,9 @@ class LoginView extends StatefulWidget {
   State<LoginView> createState() => _LoginViewState();
 }
 
-class _LoginViewState extends State<LoginView> {
+class _LoginViewState extends State<LoginView> { 
+
+ 
   GlobalKey<FormState> formKey = GlobalKey<FormState>(); 
   LoginRequestModel  loginRequestModel = LoginRequestModel() ; 
   @override
@@ -79,7 +81,8 @@ class _LoginViewState extends State<LoginView> {
                     CustomButton(
                         onPressed: () {
                           if(formKey.currentState!.validate()){
-                            AuthCubit.get(context).login(loginRequestModel: loginRequestModel);
+                           // AuthCubit.get(context).login(loginRequestModel: loginRequestModel);
+                           NavigationService.goNamed(AppRouter.layoutRoute);
                           }
                         },
                         text: "login".tr()),
